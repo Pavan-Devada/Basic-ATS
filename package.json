@@ -1,0 +1,16 @@
+{
+  "name": "ats-api",
+  "version": "1.0.0",
+  "description": "Creating a basic ATS",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --env-file=.env server.js",
+    "dev": "nodemon --env-file=.env server.js"
+  },
+  "author": "Pavan Devada",
+  "license": "MIT",
+  "dependencies": {
+    "codemon": "^0.1.31-development",
+    "express": "^4.21.2"
+  }
+}
