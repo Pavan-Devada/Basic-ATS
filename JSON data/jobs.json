@@ -1,0 +1,802 @@
+[
+    {
+        "job_id": 1,
+        "title": "Product Manager",
+        "company": "Netflix",
+        "location": "New York",
+        "salary_range": "$100k-$120k",
+        "job_level": "Mid-Level",
+        "employment_type": "Part-time",
+        "requirements": [
+            "Strong problem-solving skills",
+            "Excellent communication skills",
+            "Master's Degree"
+        ],
+        "posted_date": "2024-03-26",
+        "application_deadline": "2024-05-26"
+    },
+    {
+        "job_id": 2,
+        "title": "Product Manager",
+        "company": "IBM",
+        "location": "Los Angeles",
+        "salary_range": "$100k-$120k",
+        "job_level": "Lead",
+        "employment_type": "Freelance",
+        "requirements": [
+            "5+ years experience",
+            "Bachelor's Degree",
+            "Master's Degree"
+        ],
+        "posted_date": "2024-02-22",
+        "application_deadline": "2024-03-01"
+    },
+    {
+        "job_id": 3,
+        "title": "Software Engineer",
+        "company": "Google",
+        "location": "New York",
+        "salary_range": "$80k-$100k",
+        "job_level": "Senior-Level",
+        "employment_type": "Internship",
+        "requirements": [
+            "Master's Degree",
+            "Bachelor's Degree",
+            "Strong problem-solving skills"
+        ],
+        "posted_date": "2024-06-08",
+        "application_deadline": "2024-05-22"
+    },
+    {
+        "job_id": 4,
+        "title": "Product Manager",
+        "company": "Google",
+        "location": "Austin",
+        "salary_range": "$80k-$100k",
+        "job_level": "Manager",
+        "employment_type": "Internship",
+        "requirements": [
+            "Strong problem-solving skills",
+            "Bachelor's Degree",
+            "Master's Degree"
+        ],
+        "posted_date": "2024-09-05",
+        "application_deadline": "2024-04-15"
+    },
+    {
+        "job_id": 5,
+        "title": "UX Designer",
+        "company": "Microsoft",
+        "location": "New York",
+        "salary_range": "$80k-$100k",
+        "job_level": "Entry-Level",
+        "employment_type": "Internship",
+        "requirements": [
+            "Excellent communication skills",
+            "Bachelor's Degree",
+            "Master's Degree"
+        ],
+        "posted_date": "2024-05-12",
+        "application_deadline": "2024-04-28"
+    },
+    {
+        "job_id": 6,
+        "title": "Data Scientist",
+        "company": "IBM",
+        "location": "Austin",
+        "salary_range": "$60k-$80k",
+        "job_level": "Entry-Level",
+        "employment_type": "Internship",
+        "requirements": [
+            "Excellent communication skills",
+            "5+ years experience",
+            "Strong problem-solving skills"
+        ],
+        "posted_date": "2024-10-03",
+        "application_deadline": "2024-07-27"
+    },
+    {
+        "job_id": 7,
+        "title": "Product Manager",
+        "company": "Uber",
+        "location": "Los Angeles",
+        "salary_range": "$120k-$150k",
+        "job_level": "Entry-Level",
+        "employment_type": "Internship",
+        "requirements": [
+            "Bachelor's Degree",
+            "Strong problem-solving skills",
+            "5+ years experience"
+        ],
+        "posted_date": "2024-03-16",
+        "application_deadline": "2024-04-14"
+    },
+    {
+        "job_id": 8,
+        "title": "Software Engineer",
+        "company": "Airbnb",
+        "location": "New York",
+        "salary_range": "$150k-$200k",
+        "job_level": "Manager",
+        "employment_type": "Contract",
+        "requirements": [
+            "Master's Degree",
+            "5+ years experience",
+            "Bachelor's Degree"
+        ],
+        "posted_date": "2024-07-14",
+        "application_deadline": "2024-09-06"
+    },
+    {
+        "job_id": 9,
+        "title": "Marketing Specialist",
+        "company": "Facebook",
+        "location": "New York",
+        "salary_range": "$150k-$200k",
+        "job_level": "Entry-Level",
+        "employment_type": "Internship",
+        "requirements": [
+            "Bachelor's Degree",
+            "5+ years experience",
+            "Strong problem-solving skills"
+        ],
+        "posted_date": "2024-03-06",
+        "application_deadline": "2024-12-15"
+    },
+    {
+        "job_id": 10,
+        "title": "Software Engineer",
+        "company": "Uber",
+        "location": "Chicago",
+        "salary_range": "$150k-$200k",
+        "job_level": "Manager",
+        "employment_type": "Part-time",
+        "requirements": [
+            "Excellent communication skills",
+            "Master's Degree",
+            "Strong problem-solving skills"
+        ],
+        "posted_date": "2024-12-06",
+        "application_deadline": "2024-05-25"
+    },
+    {
+        "job_id": 11,
+        "title": "Product Manager",
+        "company": "IBM",
+        "location": "New York",
+        "salary_range": "$60k-$80k",
+        "job_level": "Mid-Level",
+        "employment_type": "Freelance",
+        "requirements": [
+            "Strong problem-solving skills",
+            "Excellent communication skills",
+            "Bachelor's Degree"
+        ],
+        "posted_date": "2024-12-24",
+        "application_deadline": "2024-09-13"
+    },
+    {
+        "job_id": 12,
+        "title": "Software Engineer",
+        "company": "Amazon",
+        "location": "Chicago",
+        "salary_range": "$150k-$200k",
+        "job_level": "Senior-Level",
+        "employment_type": "Contract",
+        "requirements": [
+            "Master's Degree",
+            "Strong problem-solving skills",
+            "Bachelor's Degree"
+        ],
+        "posted_date": "2024-01-11",
+        "application_deadline": "2024-07-03"
+    },
+    {
+        "job_id": 13,
+        "title": "Marketing Specialist",
+        "company": "Facebook",
+        "location": "Austin",
+        "salary_range": "$100k-$120k",
+        "job_level": "Entry-Level",
+        "employment_type": "Full-time",
+        "requirements": [
+            "Excellent communication skills",
+            "5+ years experience",
+            "Strong problem-solving skills"
+        ],
+        "posted_date": "2024-12-27",
+        "application_deadline": "2024-05-06"
+    },
+    {
+        "job_id": 14,
+        "title": "UX Designer",
+        "company": "Tesla",
+        "location": "Seattle",
+        "salary_range": "$150k-$200k",
+        "job_level": "Manager",
+        "employment_type": "Full-time",
+        "requirements": [
+            "Master's Degree",
+            "Excellent communication skills",
+            "5+ years experience"
+        ],
+        "posted_date": "2024-12-16",
+        "application_deadline": "2024-07-15"
+    },
+    {
+        "job_id": 15,
+        "title": "Data Scientist",
+        "company": "Apple",
+        "location": "Los Angeles",
+        "salary_range": "$100k-$120k",
+        "job_level": "Lead",
+        "employment_type": "Full-time",
+        "requirements": [
+            "Master's Degree",
+            "Strong problem-solving skills",
+            "5+ years experience"
+        ],
+        "posted_date": "2024-03-25",
+        "application_deadline": "2024-10-17"
+    },
+    {
+        "job_id": 16,
+        "title": "Software Engineer",
+        "company": "Google",
+        "location": "Boston",
+        "salary_range": "$60k-$80k",
+        "job_level": "Manager",
+        "employment_type": "Part-time",
+        "requirements": [
+            "Master's Degree",
+            "Strong problem-solving skills",
+            "5+ years experience"
+        ],
+        "posted_date": "2024-06-20",
+        "application_deadline": "2024-08-17"
+    },
+    {
+        "job_id": 17,
+        "title": "Data Scientist",
+        "company": "Google",
+        "location": "Denver",
+        "salary_range": "$100k-$120k",
+        "job_level": "Lead",
+        "employment_type": "Full-time",
+        "requirements": [
+            "5+ years experience",
+            "Master's Degree",
+            "Bachelor's Degree"
+        ],
+        "posted_date": "2024-08-05",
+        "application_deadline": "2024-08-05"
+    },
+    {
+        "job_id": 18,
+        "title": "Marketing Specialist",
+        "company": "IBM",
+        "location": "Denver",
+        "salary_range": "$100k-$120k",
+        "job_level": "Mid-Level",
+        "employment_type": "Contract",
+        "requirements": [
+            "Strong problem-solving skills",
+            "5+ years experience",
+            "Excellent communication skills"
+        ],
+        "posted_date": "2024-06-07",
+        "application_deadline": "2024-12-25"
+    },
+    {
+        "job_id": 19,
+        "title": "Software Engineer",
+        "company": "Facebook",
+        "location": "Los Angeles",
+        "salary_range": "$100k-$120k",
+        "job_level": "Lead",
+        "employment_type": "Full-time",
+        "requirements": [
+            "5+ years experience",
+            "Master's Degree",
+            "Strong problem-solving skills"
+        ],
+        "posted_date": "2024-12-01",
+        "application_deadline": "2024-10-22"
+    },
+    {
+        "job_id": 20,
+        "title": "Data Scientist",
+        "company": "Airbnb",
+        "location": "Denver",
+        "salary_range": "$80k-$100k",
+        "job_level": "Senior-Level",
+        "employment_type": "Internship",
+        "requirements": [
+            "Excellent communication skills",
+            "Bachelor's Degree",
+            "5+ years experience"
+        ],
+        "posted_date": "2024-03-26",
+        "application_deadline": "2024-09-10"
+    },
+    {
+        "job_id": 21,
+        "title": "Data Scientist",
+        "company": "Microsoft",
+        "location": "Denver",
+        "salary_range": "$60k-$80k",
+        "job_level": "Senior-Level",
+        "employment_type": "Internship",
+        "requirements": [
+            "Master's Degree",
+            "5+ years experience",
+            "Excellent communication skills"
+        ],
+        "posted_date": "2024-07-09",
+        "application_deadline": "2024-04-08"
+    },
+    {
+        "job_id": 22,
+        "title": "Marketing Specialist",
+        "company": "Apple",
+        "location": "Atlanta",
+        "salary_range": "$80k-$100k",
+        "job_level": "Lead",
+        "employment_type": "Freelance",
+        "requirements": [
+            "5+ years experience",
+            "Excellent communication skills",
+            "Bachelor's Degree"
+        ],
+        "posted_date": "2024-01-02",
+        "application_deadline": "2024-04-22"
+    },
+    {
+        "job_id": 23,
+        "title": "Marketing Specialist",
+        "company": "Netflix",
+        "location": "Denver",
+        "salary_range": "$100k-$120k",
+        "job_level": "Mid-Level",
+        "employment_type": "Internship",
+        "requirements": [
+            "5+ years experience",
+            "Bachelor's Degree",
+            "Strong problem-solving skills"
+        ],
+        "posted_date": "2024-01-21",
+        "application_deadline": "2024-06-16"
+    },
+    {
+        "job_id": 24,
+        "title": "Marketing Specialist",
+        "company": "Apple",
+        "location": "Austin",
+        "salary_range": "$60k-$80k",
+        "job_level": "Lead",
+        "employment_type": "Internship",
+        "requirements": [
+            "Master's Degree",
+            "Excellent communication skills",
+            "Strong problem-solving skills"
+        ],
+        "posted_date": "2024-07-19",
+        "application_deadline": "2024-08-11"
+    },
+    {
+        "job_id": 25,
+        "title": "Product Manager",
+        "company": "IBM",
+        "location": "New York",
+        "salary_range": "$80k-$100k",
+        "job_level": "Manager",
+        "employment_type": "Full-time",
+        "requirements": [
+            "Bachelor's Degree",
+            "Strong problem-solving skills",
+            "5+ years experience"
+        ],
+        "posted_date": "2024-07-19",
+        "application_deadline": "2024-04-15"
+    },
+    {
+        "job_id": 26,
+        "title": "Software Engineer",
+        "company": "Airbnb",
+        "location": "Miami",
+        "salary_range": "$100k-$120k",
+        "job_level": "Lead",
+        "employment_type": "Part-time",
+        "requirements": [
+            "Excellent communication skills",
+            "Bachelor's Degree",
+            "Strong problem-solving skills"
+        ],
+        "posted_date": "2024-01-02",
+        "application_deadline": "2024-06-07"
+    },
+    {
+        "job_id": 27,
+        "title": "Product Manager",
+        "company": "IBM",
+        "location": "Seattle",
+        "salary_range": "$150k-$200k",
+        "job_level": "Manager",
+        "employment_type": "Internship",
+        "requirements": [
+            "Master's Degree",
+            "Strong problem-solving skills",
+            "Excellent communication skills"
+        ],
+        "posted_date": "2024-09-09",
+        "application_deadline": "2024-05-23"
+    },
+    {
+        "job_id": 28,
+        "title": "Product Manager",
+        "company": "IBM",
+        "location": "San Francisco",
+        "salary_range": "$120k-$150k",
+        "job_level": "Senior-Level",
+        "employment_type": "Contract",
+        "requirements": [
+            "Strong problem-solving skills",
+            "5+ years experience",
+            "Bachelor's Degree"
+        ],
+        "posted_date": "2024-06-27",
+        "application_deadline": "2024-07-27"
+    },
+    {
+        "job_id": 29,
+        "title": "Data Scientist",
+        "company": "Apple",
+        "location": "Seattle",
+        "salary_range": "$60k-$80k",
+        "job_level": "Lead",
+        "employment_type": "Contract",
+        "requirements": [
+            "Master's Degree",
+            "Excellent communication skills",
+            "Bachelor's Degree"
+        ],
+        "posted_date": "2024-04-10",
+        "application_deadline": "2024-07-10"
+    },
+    {
+        "job_id": 30,
+        "title": "Marketing Specialist",
+        "company": "Amazon",
+        "location": "Atlanta",
+        "salary_range": "$60k-$80k",
+        "job_level": "Manager",
+        "employment_type": "Full-time",
+        "requirements": [
+            "Bachelor's Degree",
+            "Excellent communication skills",
+            "Master's Degree"
+        ],
+        "posted_date": "2024-10-02",
+        "application_deadline": "2024-09-15"
+    },
+    {
+        "job_id": 31,
+        "title": "Marketing Specialist",
+        "company": "Facebook",
+        "location": "Seattle",
+        "salary_range": "$60k-$80k",
+        "job_level": "Entry-Level",
+        "employment_type": "Full-time",
+        "requirements": [
+            "Excellent communication skills",
+            "Master's Degree",
+            "5+ years experience"
+        ],
+        "posted_date": "2024-12-13",
+        "application_deadline": "2024-12-19"
+    },
+    {
+        "job_id": 32,
+        "title": "Data Scientist",
+        "company": "IBM",
+        "location": "New York",
+        "salary_range": "$80k-$100k",
+        "job_level": "Mid-Level",
+        "employment_type": "Freelance",
+        "requirements": [
+            "Master's Degree",
+            "Bachelor's Degree",
+            "5+ years experience"
+        ],
+        "posted_date": "2024-07-20",
+        "application_deadline": "2024-07-01"
+    },
+    {
+        "job_id": 33,
+        "title": "Marketing Specialist",
+        "company": "Microsoft",
+        "location": "Austin",
+        "salary_range": "$100k-$120k",
+        "job_level": "Mid-Level",
+        "employment_type": "Internship",
+        "requirements": [
+            "Master's Degree",
+            "Bachelor's Degree",
+            "Strong problem-solving skills"
+        ],
+        "posted_date": "2024-06-26",
+        "application_deadline": "2024-05-13"
+    },
+    {
+        "job_id": 34,
+        "title": "Marketing Specialist",
+        "company": "Apple",
+        "location": "Austin",
+        "salary_range": "$60k-$80k",
+        "job_level": "Mid-Level",
+        "employment_type": "Contract",
+        "requirements": [
+            "Master's Degree",
+            "Bachelor's Degree",
+            "Excellent communication skills"
+        ],
+        "posted_date": "2024-08-12",
+        "application_deadline": "2024-04-08"
+    },
+    {
+        "job_id": 35,
+        "title": "UX Designer",
+        "company": "Apple",
+        "location": "Austin",
+        "salary_range": "$150k-$200k",
+        "job_level": "Entry-Level",
+        "employment_type": "Full-time",
+        "requirements": [
+            "Bachelor's Degree",
+            "Strong problem-solving skills",
+            "Master's Degree"
+        ],
+        "posted_date": "2024-09-28",
+        "application_deadline": "2024-05-06"
+    },
+    {
+        "job_id": 36,
+        "title": "UX Designer",
+        "company": "Facebook",
+        "location": "San Francisco",
+        "salary_range": "$80k-$100k",
+        "job_level": "Lead",
+        "employment_type": "Full-time",
+        "requirements": [
+            "Strong problem-solving skills",
+            "Excellent communication skills",
+            "Master's Degree"
+        ],
+        "posted_date": "2024-07-12",
+        "application_deadline": "2024-07-17"
+    },
+    {
+        "job_id": 37,
+        "title": "UX Designer",
+        "company": "Facebook",
+        "location": "New York",
+        "salary_range": "$100k-$120k",
+        "job_level": "Lead",
+        "employment_type": "Freelance",
+        "requirements": [
+            "5+ years experience",
+            "Bachelor's Degree",
+            "Strong problem-solving skills"
+        ],
+        "posted_date": "2024-08-10",
+        "application_deadline": "2024-08-25"
+    },
+    {
+        "job_id": 38,
+        "title": "Data Scientist",
+        "company": "Netflix",
+        "location": "Boston",
+        "salary_range": "$60k-$80k",
+        "job_level": "Entry-Level",
+        "employment_type": "Full-time",
+        "requirements": [
+            "Master's Degree",
+            "Excellent communication skills",
+            "Bachelor's Degree"
+        ],
+        "posted_date": "2024-01-09",
+        "application_deadline": "2024-05-27"
+    },
+    {
+        "job_id": 39,
+        "title": "Marketing Specialist",
+        "company": "Google",
+        "location": "San Francisco",
+        "salary_range": "$100k-$120k",
+        "job_level": "Manager",
+        "employment_type": "Full-time",
+        "requirements": [
+            "Bachelor's Degree",
+            "Strong problem-solving skills",
+            "5+ years experience"
+        ],
+        "posted_date": "2024-06-08",
+        "application_deadline": "2024-11-02"
+    },
+    {
+        "job_id": 40,
+        "title": "Product Manager",
+        "company": "Uber",
+        "location": "San Francisco",
+        "salary_range": "$60k-$80k",
+        "job_level": "Senior-Level",
+        "employment_type": "Part-time",
+        "requirements": [
+            "Strong problem-solving skills",
+            "Bachelor's Degree",
+            "Master's Degree"
+        ],
+        "posted_date": "2024-02-24",
+        "application_deadline": "2024-10-20"
+    },
+    {
+        "job_id": 41,
+        "title": "Data Scientist",
+        "company": "Netflix",
+        "location": "Boston",
+        "salary_range": "$100k-$120k",
+        "job_level": "Manager",
+        "employment_type": "Contract",
+        "requirements": [
+            "Bachelor's Degree",
+            "Master's Degree",
+            "Excellent communication skills"
+        ],
+        "posted_date": "2024-10-23",
+        "application_deadline": "2024-06-28"
+    },
+    {
+        "job_id": 42,
+        "title": "Product Manager",
+        "company": "Uber",
+        "location": "Chicago",
+        "salary_range": "$100k-$120k",
+        "job_level": "Lead",
+        "employment_type": "Contract",
+        "requirements": [
+            "Master's Degree",
+            "Bachelor's Degree",
+            "Strong problem-solving skills"
+        ],
+        "posted_date": "2024-01-13",
+        "application_deadline": "2024-10-17"
+    },
+    {
+        "job_id": 43,
+        "title": "Data Scientist",
+        "company": "Amazon",
+        "location": "San Francisco",
+        "salary_range": "$60k-$80k",
+        "job_level": "Lead",
+        "employment_type": "Full-time",
+        "requirements": [
+            "Bachelor's Degree",
+            "5+ years experience",
+            "Strong problem-solving skills"
+        ],
+        "posted_date": "2024-03-22",
+        "application_deadline": "2024-07-03"
+    },
+    {
+        "job_id": 44,
+        "title": "Marketing Specialist",
+        "company": "Microsoft",
+        "location": "San Francisco",
+        "salary_range": "$120k-$150k",
+        "job_level": "Mid-Level",
+        "employment_type": "Part-time",
+        "requirements": [
+            "5+ years experience",
+            "Bachelor's Degree",
+            "Strong problem-solving skills"
+        ],
+        "posted_date": "2024-02-06",
+        "application_deadline": "2024-04-08"
+    },
+    {
+        "job_id": 45,
+        "title": "UX Designer",
+        "company": "Tesla",
+        "location": "Atlanta",
+        "salary_range": "$120k-$150k",
+        "job_level": "Entry-Level",
+        "employment_type": "Contract",
+        "requirements": [
+            "Excellent communication skills",
+            "Master's Degree",
+            "Strong problem-solving skills"
+        ],
+        "posted_date": "2024-08-14",
+        "application_deadline": "2024-09-19"
+    },
+    {
+        "job_id": 46,
+        "title": "UX Designer",
+        "company": "IBM",
+        "location": "San Francisco",
+        "salary_range": "$60k-$80k",
+        "job_level": "Lead",
+        "employment_type": "Freelance",
+        "requirements": [
+            "Bachelor's Degree",
+            "Master's Degree",
+            "5+ years experience"
+        ],
+        "posted_date": "2024-10-09",
+        "application_deadline": "2024-06-05"
+    },
+    {
+        "job_id": 47,
+        "title": "Marketing Specialist",
+        "company": "Tesla",
+        "location": "Atlanta",
+        "salary_range": "$60k-$80k",
+        "job_level": "Entry-Level",
+        "employment_type": "Internship",
+        "requirements": [
+            "5+ years experience",
+            "Strong problem-solving skills",
+            "Bachelor's Degree"
+        ],
+        "posted_date": "2024-04-14",
+        "application_deadline": "2024-12-18"
+    },
+    {
+        "job_id": 48,
+        "title": "Marketing Specialist",
+        "company": "Apple",
+        "location": "Seattle",
+        "salary_range": "$150k-$200k",
+        "job_level": "Entry-Level",
+        "employment_type": "Contract",
+        "requirements": [
+            "Master's Degree",
+            "5+ years experience",
+            "Strong problem-solving skills"
+        ],
+        "posted_date": "2024-12-15",
+        "application_deadline": "2024-10-13"
+    },
+    {
+        "job_id": 49,
+        "title": "Data Scientist",
+        "company": "Google",
+        "location": "Denver",
+        "salary_range": "$60k-$80k",
+        "job_level": "Entry-Level",
+        "employment_type": "Internship",
+        "requirements": [
+            "Strong problem-solving skills",
+            "Excellent communication skills",
+            "5+ years experience"
+        ],
+        "posted_date": "2024-02-16",
+        "application_deadline": "2024-07-12"
+    },
+    {
+        "job_id": 50,
+        "title": "Marketing Specialist",
+        "company": "Microsoft",
+        "location": "Miami",
+        "salary_range": "$120k-$150k",
+        "job_level": "Manager",
+        "employment_type": "Freelance",
+        "requirements": [
+            "Bachelor's Degree",
+            "5+ years experience",
+            "Strong problem-solving skills"
+        ],
+        "posted_date": "2024-02-14",
+        "application_deadline": "2024-04-21"
+    }
+]
