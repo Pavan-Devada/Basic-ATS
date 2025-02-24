@@ -58,8 +58,29 @@ router.post("/", (req, res) => {
     res.status(201).json(personData[personData.length - 1]);
 })
 
-//PATCH update a existing record
-// router.patch("/")
+// PUT updating the existing person
+router.put("/:id", (req, res) => {
+    const id = Number(req.params.id);
+    const records = personData.find((record) => record.id === id);
+    if (!records) {
+        return res.status(404).json({ message: "record not found" })
+    }
+    for (let key in req.body) {
+        records[key] = req.body[key];
+    }
+    res.status(200).json(personData)
+})
+
+//DELETE deleting the person
+router.delete("/:id", (req, res) => {
+    const id = Number(req.params.id);
+    const records = personData.find((record) => record.id === id);
+    if (!records) {
+        return res.status(404).json({ message: "record not found" })
+    }
+    personData = personData.filter(record => record.id !== id);
+    res.status(200).json(personData);
+})
 
 
 module.exports = router;

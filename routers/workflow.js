@@ -10,18 +10,18 @@ fs.readFile(path.join(__dirname, "../JSON data/applications.json"), "Utf8", (err
     applicationData = JSON.parse(data);
 })
 
-//GET jobs
+//GET applications
 router.get("/", (req, res) => {
-    //GET limited users
+    //GET limited applications
     const limitedApplications = Number(req.query.limit);
     if (!isNaN(limitedApplications) && limitedApplications > 0) {
         return res.status(200).json(applicationData.slice(0, limitedApplications));
     }
-    // GET all users 
+    // GET all applications 
     res.status(200).json(applicationData);
 });
 
-//GET particular user
+//GET particular application
 router.get("/:id", (req, res) => {
     const id = Number(req.params.id);
     const records = applicationData.filter((record) => record.application_id === id)
@@ -34,7 +34,7 @@ router.get("/:id", (req, res) => {
 
 })
 
-//POST add a new user
+//POST add a new application
 router.post("/", (req, res) => {
     const newApplication = {
         "applicant_id": applicationData.length + 1,
@@ -50,6 +50,30 @@ router.post("/", (req, res) => {
     }
     applicationData.push(newApplication);
     res.status(201).json(applicationData[applicationData.length - 1]);
+})
+
+// PUT updating the existing applications
+router.put("/:id", (req, res) => {
+    const id = Number(req.params.id);
+    const records = applicationData.find((record) => record.applicant_id === id);
+    if (!records) {
+        return res.status(404).json({ message: "record not found" })
+    }
+    for (let key in req.body) {
+        records[key] = req.body[key];
+    }
+    res.status(200).json(applicationData)
+})
+
+//DELETE deleting the application
+router.delete("/:id", (req, res) => {
+    const id = Number(req.params.id);
+    const records = applicationData.find((record) => record.applicant_id === id);
+    if (!records) {
+        return res.status(404).json({ message: "record not found" })
+    }
+    applicationData = applicationData.filter(record => record.applicant_id !== id);
+    res.status(200).json(applicationData);
 })
 
 module.exports = router;
