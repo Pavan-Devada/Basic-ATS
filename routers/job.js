@@ -22,17 +22,19 @@ router.get("/", (req, res) => {
 });
 
 //GET particular job
-router.get("/:id", (req, res) => {
+router.get("/:id", (req, res, next) => {
     const id = Number(req.params.id);
     const records = jobData.filter((record) => record.job_id === id)
     if (records.length > 0) {
         return res.status(200).json(records);
     }
-    res.status(404).json({ message: "record not found" });
+    const error = new Error("record not found");
+    error.status = 404;
+    return next(error);;
 })
 
 //POST add a new job
-router.post("/", (req, res) => {
+router.post("/", (req, res, next) => {
     const newJob = {
         "job_id": jobData.length + 1,
         "title": req.body.title || "",
@@ -46,18 +48,22 @@ router.post("/", (req, res) => {
         "application_deadline": req.body.application_deadline || ""
     }
     if (newJob.title === "" || newJob.company === "" || newJob.location === "") {
-        return res.status(400).json({ message: "required information is missing" });
+        const error = new Error("required information is missing");
+        error.status = 400;
+        return next(error);
     }
     jobData.push(newJob);
     res.status(201).json(jobData[jobData.length - 1]);
 })
 
 // PUT updating the existing jobs
-router.put("/:id", (req, res) => {
+router.put("/:id", (req, res, next) => {
     const id = Number(req.params.id);
     const records = jobData.find((record) => record.job_id === id);
     if (!records) {
-        return res.status(404).json({ message: "record not found" })
+        const error = new Error("record not found");
+        error.status = 404;
+        return next(error);
     }
     for (let key in req.body) {
         records[key] = req.body[key];
@@ -66,11 +72,13 @@ router.put("/:id", (req, res) => {
 })
 
 //DELETE deleting the job
-router.delete("/:id", (req, res) => {
+router.delete("/:id", (req, res, next) => {
     const id = Number(req.params.id);
     const records = jobData.find((record) => record.job_id === id);
     if (!records) {
-        return res.status(404).json({ message: "record not found" })
+        const error = new Error("record not found");
+        error.status = 404;
+        return next(error);
     }
     jobData = jobData.filter(record => record.job_id !== id);
     res.status(200).json(jobData);

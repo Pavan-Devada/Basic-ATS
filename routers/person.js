@@ -25,20 +25,19 @@ router.get("/", (req, res) => {
 });
 
 //GET particular user
-router.get("/:id", (req, res) => {
+router.get("/:id", (req, res, next) => {
     const id = Number(req.params.id);
-    const records = personData.filter((record) => record.id === id)
-    if (records.length > 0) {
-        res.status(200).json(records);
+    const records = personData.find((record) => record.id === id)
+    if (!records) {
+        const error = new Error("record not found");
+        error.status = 404;
+        return next(error);
     }
-    else {
-        res.status(404).json({ message: "record not found" });
-    }
-
+    res.status(200).json(records);
 })
 
 //POST add a new user
-router.post("/", (req, res) => {
+router.post("/", (req, res, next) => {
     const newPerson = {
         "id": personData.length + 1,
         "name": req.body.name || "",
@@ -52,18 +51,22 @@ router.post("/", (req, res) => {
         "position": req.body.position || ""
     }
     if (newPerson.name === "" || newPerson.email === "" || newPerson.age === "" || newPerson.phone === "") {
-        return res.status(400).json({ message: "required information is missing" });
+        const error = new Error("required information is missing");
+        error.status = 400;
+        return next(error);
     }
     personData.push(newPerson);
     res.status(201).json(personData[personData.length - 1]);
 })
 
 // PUT updating the existing person
-router.put("/:id", (req, res) => {
+router.put("/:id", (req, res, next) => {
     const id = Number(req.params.id);
     const records = personData.find((record) => record.id === id);
     if (!records) {
-        return res.status(404).json({ message: "record not found" })
+        const error = new Error("record not found");
+        error.status = 404;
+        return next(error);
     }
     for (let key in req.body) {
         records[key] = req.body[key];
@@ -72,11 +75,13 @@ router.put("/:id", (req, res) => {
 })
 
 //DELETE deleting the person
-router.delete("/:id", (req, res) => {
+router.delete("/:id", (req, res, next) => {
     const id = Number(req.params.id);
     const records = personData.find((record) => record.id === id);
     if (!records) {
-        return res.status(404).json({ message: "record not found" })
+        const error = new Error("record not found");
+        error.status = 404;
+        return next(error);
     }
     personData = personData.filter(record => record.id !== id);
     res.status(200).json(personData);

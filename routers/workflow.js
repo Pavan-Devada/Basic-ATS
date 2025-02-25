@@ -22,20 +22,20 @@ router.get("/", (req, res) => {
 });
 
 //GET particular application
-router.get("/:id", (req, res) => {
+router.get("/:id", (req, res, next) => {
     const id = Number(req.params.id);
     const records = applicationData.filter((record) => record.application_id === id)
     if (records.length > 0) {
-        res.status(200).json(records);
+        return res.status(200).json(records);
     }
-    else {
-        res.status(404).json({ message: "record not found" });
-    }
+    const error = new Error("record not found");
+    error.status = 404;
+    return next(error);
 
 })
 
 //POST add a new application
-router.post("/", (req, res) => {
+router.post("/", (req, res, next) => {
     const newApplication = {
         "applicant_id": applicationData.length + 1,
         "candidate_id": req.body.candidate_id || "",
@@ -46,18 +46,22 @@ router.post("/", (req, res) => {
         "submission_date": req.body.submission_date || ""
     }
     if (newApplication.candidate_id === "" || newApplication.job_position === "") {
-        return res.status(400).json({ message: "required information is missing" });
+        const error = new Error("required information is missing");
+        error.status = 400;
+        return next(error);
     }
     applicationData.push(newApplication);
     res.status(201).json(applicationData[applicationData.length - 1]);
 })
 
 // PUT updating the existing applications
-router.put("/:id", (req, res) => {
+router.put("/:id", (req, res, next) => {
     const id = Number(req.params.id);
     const records = applicationData.find((record) => record.applicant_id === id);
     if (!records) {
-        return res.status(404).json({ message: "record not found" })
+        const error = new Error("record not found");
+        error.status = 404;
+        return next(error);
     }
     for (let key in req.body) {
         records[key] = req.body[key];
@@ -66,11 +70,13 @@ router.put("/:id", (req, res) => {
 })
 
 //DELETE deleting the application
-router.delete("/:id", (req, res) => {
+router.delete("/:id", (req, res, next) => {
     const id = Number(req.params.id);
     const records = applicationData.find((record) => record.applicant_id === id);
     if (!records) {
-        return res.status(404).json({ message: "record not found" })
+        const error = new Error("record not found");
+        error.status = 404;
+        return next(error);
     }
     applicationData = applicationData.filter(record => record.applicant_id !== id);
     res.status(200).json(applicationData);
