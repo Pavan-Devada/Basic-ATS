@@ -11,6 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "codemon": "^0.1.31-development",
+    "colors": "^1.4.0",
     "express": "^4.21.2"
   }
 }
