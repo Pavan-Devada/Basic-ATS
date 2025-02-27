@@ -1,6 +1,7 @@
 const { Console } = require("console");
 const express = require("express");
 const fs = require("fs");
+const path = require("path")
 
 const PORT = process.env.PORT || 5000;
 
@@ -13,6 +14,8 @@ const workflow = require("./routers/workflow")
 
 
 const app = express();
+
+app.use(express.static(path.join(__dirname, "public")));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
